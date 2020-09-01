@@ -1,5 +1,0 @@
-com\zero\hjy\controller\AuthorityUserController.class
-com\zero\hjy\service\AuthorityUserService.class
-com\zero\hjy\entity\AuthorityUser.class
-com\zero\hjy\dao\AuthorityUserDao.class
-com\zero\hjy\service\impl\AuthorityUserServiceImpl.class
