@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c607b71-aefe-4fbe-b17a-00ca54ce4d2a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/AuthorityUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/AuthorityUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/authority-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/authority-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/AuthorityUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/AuthorityUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/AuthorityUserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/AuthorityUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/AuthorityUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/AuthorityUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/AuthorityUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/AuthorityUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/AuthorityUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/resources/mapper/AuthorityUserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-    </list>
+    <list default="true" id="8c607b71-aefe-4fbe-b17a-00ca54ce4d2a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/web/target/" />
@@ -45,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/AuthorityUserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1025">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1429#1430#0" expanded="true" />
@@ -58,8 +44,8 @@
       <file leaf-file-name="ResponseAdvice.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zero/hjy/config/ResponseAdvice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state relative-caret-position="374">
+              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#545#574#0" expanded="true" />
@@ -83,13 +69,6 @@
             <state relative-caret-position="258">
               <caret line="285" column="42" selection-start-line="285" selection-start-column="42" selection-end-line="285" selection-end-column="42" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hs_err_pid10464.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hs_err_pid10464.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8160" />
           </provider>
         </entry>
       </file>
@@ -124,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zero/hjy/WebApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
-              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -415,7 +394,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -423,12 +401,12 @@
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="JRebel Console" sideWeight="0.5005365" side_tool="true" weight="0.32939914" />
-      <window_info anchor="right" id="Maven Projects" weight="0.18991417" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.18991417" />
       <window_info anchor="bottom" id="JRebel Executor" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.48497853" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Sequence" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49946353" weight="0.32939914" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49946353" visible="true" weight="0.32939914" />
       <window_info anchor="right" id="Word Book" side_tool="true" />
       <window_info id="Designer" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.25" />
@@ -436,7 +414,7 @@
       <window_info id="JRebel" sideWeight="0.5008" side_tool="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="UI Designer" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.46030042" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46030042" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -618,7 +596,7 @@
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zero/hjy/WebApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -649,7 +627,7 @@
     <entry file="file://$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/AuthorityUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1025">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1429#1430#0" expanded="true" />
@@ -660,8 +638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zero/hjy/config/ResponseAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="374">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#545#574#0" expanded="true" />
