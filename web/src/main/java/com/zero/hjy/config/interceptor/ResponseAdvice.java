@@ -21,11 +21,6 @@ public class ResponseAdvice implements ResponseBodyAdvice {
 
     /**
      * 拦截策略
-     *
-     * @param returnType    the return type
-     * @param converterType the selected converter type
-     * @return {@code true} if {@link #beforeBodyWrite} should be invoked;
-     * {@code false} otherwise
      */
     @Override
     public boolean supports(MethodParameter returnType, Class converterType) {
@@ -39,16 +34,7 @@ public class ResponseAdvice implements ResponseBodyAdvice {
     }
 
     /**
-     * Invoked after an {@code HttpMessageConverter} is selected and just before
-     * its write method is invoked.
-     *
-     * @param body                  the body to be written
-     * @param returnType            the return type of the controller method
-     * @param selectedContentType   the content type selected through content negotiation
-     * @param selectedConverterType the converter type selected to write to the response
-     * @param request               the current request
-     * @param response              the current response
-     * @return the body that was passed in or a modified (possibly new) instance
+     * 参数接收前
      */
     @Override
     public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {

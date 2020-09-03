@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zero.hjy.dao.TabDeveloperMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zero.hjy.entity.TabDeveloper">
+        <id column="id" property="id" />
+        <result column="developer_name" property="developerName" />
+        <result column="legal_representative" property="legalRepresentative" />
+        <result column="contact" property="contact" />
+        <result column="contact_telephone" property="contactTelephone" />
+        <result column="contact_adress" property="contactAdress" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, developer_name, legal_representative, contact, contact_telephone, contact_adress, remarks
+    </sql>
+
+</mapper>
