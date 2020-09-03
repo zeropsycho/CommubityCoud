@@ -2,169 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c607b71-aefe-4fbe-b17a-00ca54ce4d2a" name="Default" comment=".idea内容（list：change）更改">
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabAuthorityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabAuthorityRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabCompanyDepartmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabCompanyPostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabDeveloperController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabEnterpriseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabModuleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabResidenceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/TabUserRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabAuthorityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabAuthorityRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabCompanyDepartmentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabCompanyPostMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabDeveloperMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabEnterpriseMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabModuleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabResidenceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/TabUserRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/TabAuthority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/TabCompanyDepartment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/TabCompanyPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/TabDeveloper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/TabEnterprise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/TabModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/TabResidence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/TabUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/pojo/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabAuthorityRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabAuthorityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabCompanyDepartmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabCompanyPostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabDeveloperService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabEnterpriseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabModuleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabResidenceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/TabUserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabAuthorityImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabAuthorityRoleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabCompanyDepartmentImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabCompanyPostImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabDeveloperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabEnterpriseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabModuleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabResidenceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabRoleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/TabUserRoleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/UserImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/utils/template/ParameterFormatTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/utils/template/user/UserInfoTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabAuthorityMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabAuthorityRoleMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabCompanyDepartmentMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabCompanyPostMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabDeveloperMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabEnterpriseMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabModuleMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabResidenceMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabRoleMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/TabUserRoleMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/src/main/resources/mapper/UserMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabAuthorityController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabAuthorityRoleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabCompanyDepartmentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabCompanyPostController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabDeveloperController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabEnterpriseController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabModuleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabResidenceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabRoleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/TabUserRoleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabAuthorityMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabAuthorityRoleMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabCompanyDepartmentMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabCompanyPostMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabDeveloperMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabEnterpriseMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabModuleMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabResidenceMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabRoleMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/TabUserRoleMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/TabAuthority.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/TabAuthorityRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/TabCompanyDepartment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/TabCompanyPost.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/TabDeveloper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/TabEnterprise.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/TabModule.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/TabResidence.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/TabUserRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/pojo/Permission.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabAuthorityRoleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabAuthorityService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabCompanyDepartmentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabCompanyPostService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabDeveloperService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabEnterpriseService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabModuleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabResidenceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabRoleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/TabUserRoleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabAuthorityImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabAuthorityRoleImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabCompanyDepartmentImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabCompanyPostImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabDeveloperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabEnterpriseImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabModuleImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabResidenceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabRoleImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/TabUserRoleImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/UserImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/utils/template/ParameterFormatTemplate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/utils/template/user/UserInfoTemplate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabAuthorityMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabAuthorityRoleMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabCompanyDepartmentMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabCompanyPostMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabDeveloperMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabEnterpriseMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabModuleMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabResidenceMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabRoleMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/TabUserRoleMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authority/target/classes/resources/mapper/UserMappering.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/spring-boot-logging.log.2020-09-01.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/spring-boot-logging.log.2020-09-02.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/test/java/com/zero/hjy/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/AuthorityUserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/dao/AuthorityUserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/AuthorityUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/TabAuthorityRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/AuthorityUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/service/impl/AuthorityUserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/src/main/resources/mapper/AuthorityUserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/authority-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/authority/target/authority-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/authority-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/authority/target/authority-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/controller/AuthorityUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/dao/AuthorityUserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/entity/AuthorityUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/AuthorityUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/com/zero/hjy/service/impl/AuthorityUserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/mapper/AuthorityUserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/classes/resources/mapper/AuthorityUserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/authority/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authority/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/authority/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/spring-boot-logging.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spring-boot-logging.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zero/hjy/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zero/hjy/WebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zero/hjy/config/interceptor/ResponseAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zero/hjy/config/interceptor/ResponseAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/UserController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -205,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+            <state relative-caret-position="334">
+              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -272,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="116" column="27" lean-forward="true" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="27" />
+            <state relative-caret-position="342">
+              <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -293,8 +131,11 @@
       <file leaf-file-name="WebApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zero/hjy/WebApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="275">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -389,9 +230,9 @@
         <option value="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/Role.java" />
         <option value="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/entity/User.java" />
         <option value="$PROJECT_DIR$/authority/src/main/resources/mapper/UserMappering.xml" />
-        <option value="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/UserController.java" />
         <option value="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/utils/template/user/UserInfoTemplate.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -457,7 +298,52 @@
             <path>
               <item name="CommubityCoud" type="b2602c69:ProjectViewProjectNode" />
               <item name="CommubityCoud" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="authority" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommubityCoud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommubityCoud" type="462c0819:PsiDirectoryNode" />
+              <item name="authority" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommubityCoud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommubityCoud" type="462c0819:PsiDirectoryNode" />
+              <item name="authority" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommubityCoud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommubityCoud" type="462c0819:PsiDirectoryNode" />
+              <item name="authority" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommubityCoud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommubityCoud" type="462c0819:PsiDirectoryNode" />
+              <item name="authority" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hjy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommubityCoud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommubityCoud" type="462c0819:PsiDirectoryNode" />
+              <item name="authority" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hjy" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CommubityCoud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CommubityCoud" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -591,11 +477,11 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946353" weight="0.32939914" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946353" weight="0.3390558" />
       <window_info anchor="bottom" id="Sequence" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49946353" visible="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946353" visible="true" weight="0.32939914" />
       <window_info anchor="right" id="Word Book" order="3" side_tool="true" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Problems" order="7" weight="0.32939914" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.21298283" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.21298283" />
       <window_info id="JRebel" order="2" sideWeight="0.5008" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -959,27 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zero/hjy/WebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/test/java/com/zero/hjy/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -999,8 +864,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="116" column="27" lean-forward="true" selection-start-line="116" selection-start-column="27" selection-end-line="116" selection-end-column="27" />
+        <state relative-caret-position="342">
+          <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zero/hjy/WebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authority/src/main/java/com/zero/hjy/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
         </state>
       </provider>
     </entry>

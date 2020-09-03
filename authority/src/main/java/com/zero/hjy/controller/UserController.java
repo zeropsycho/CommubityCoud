@@ -33,8 +33,11 @@ public class UserController {
         UserInfoTemplate template = new UserInfoTemplate();
         User user1 = userService.userAndRole(user);
 
-        if (null != user1.getRole()) {
-            return new UserInfoTemplate(user1, 500, "查询结构为空");
+        if (null == user1.getRole()) {
+            template.setCode(500);
+            template.setResult(user1);
+            template.setMessage("查询结构为空");
+            return template;
         }
         user1.getRole().setPermissions(Arrays.asList(new Permission()));
         template.setResult(user1);
