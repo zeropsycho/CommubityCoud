@@ -18,6 +18,9 @@
     <modules>
         <module>web</module>
         <module>authority</module>
+        <module>common</module>
+        <module>residential</module>
+        <module>enterprise</module>
     </modules>
 
     <dependencies>
@@ -76,14 +79,32 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.9</version>
         </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.6</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <!--出现a project依赖b project时可能会导致编译异常，如果子模块不做配置，那么普通的jar包会先生成，后生成可执行jar，
+             造成可执行jar包覆盖普通jar包，由此a工程无法依赖b工程的可执行jar包
+             解决：子模块使用以下plugin-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration> <!--遗留问题：可能由于在springboot启动类注解配置了异常路径-->
+                <configuration> <!--遗留问题：可能在springboot启动类注解配置了异常路径-->
                     <mainClass>com.zero.hjy.WebApplication</mainClass>
                 </configuration>
             </plugin>
@@ -109,11 +130,11 @@
         </resources>
     </build>
 <!--配置远程仓库-->
-    <pluginRepositories>
+    <!--<pluginRepositories>
         <pluginRepository>
             <id>central</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
             <name>aliyun</name>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories>-->
 </project>

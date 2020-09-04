@@ -2,7 +2,6 @@ package com.zero.hjy.dao;
 
 import com.zero.hjy.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zero.hjy.utils.template.user.UserInfoTemplate;
 
 /**
  * <p>
@@ -20,4 +19,11 @@ public interface UserMapper extends BaseMapper<User> {
      * @return
      */
     User userAndRole(User user);
+
+    /**
+     * 根据用户名查询
+     * @param username
+     * @return
+     */
+    User userLogin(User username);
 }

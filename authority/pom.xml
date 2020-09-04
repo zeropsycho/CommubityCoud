@@ -10,7 +10,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>authority</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.zero.hjy</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <groupId>com.zero.hjy</groupId>
 
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

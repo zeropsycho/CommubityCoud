@@ -2,7 +2,6 @@ package com.zero.hjy.service;
 
 import com.zero.hjy.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.zero.hjy.utils.template.user.UserInfoTemplate;
 
 /**
  * <p>
@@ -12,7 +11,9 @@ import com.zero.hjy.utils.template.user.UserInfoTemplate;
  * @author ZERO
  * @since 2020-09-03
  */
-public interface UserService extends IService<User> {
+public interface UserService {
 
     User userAndRole(User user);
+
+    User userLogin(User user);
 }

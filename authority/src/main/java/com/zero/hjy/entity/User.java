@@ -19,6 +19,16 @@ public class User implements Serializable {
 
     private static final long serialVersionUID=1L;
 
+    private String token;
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
     /**
      * 用户id
      */
@@ -38,7 +48,7 @@ public class User implements Serializable {
     /**
      * 用户昵称
      */
-    private String uNickname;
+    private String name;
 
     /**
      * 用户性别：1：男，2：女，3：性别不明
@@ -122,6 +132,19 @@ public class User implements Serializable {
 
     private Role role;
 
+    /**
+     * 头像(存储方式有待优化)
+     */
+    private String avatar;
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
     public Role getRole() {
         return role;
     }
@@ -154,12 +177,12 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public String getuNickname() {
-        return uNickname;
+    public String getName() {
+        return name;
     }
 
-    public void setuNickname(String uNickname) {
-        this.uNickname = uNickname;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getuGender() {
@@ -293,10 +316,11 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", uUsername='" + username + '\'' +
-                ", uPassword='" + password + '\'' +
-                ", uNickname='" + uNickname + '\'' +
+                "token='" + token + '\'' +
+                ", id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
                 ", uGender=" + uGender +
                 ", uBirthdate=" + uBirthdate +
                 ", uRemarks='" + uRemarks + '\'' +
@@ -314,6 +338,7 @@ public class User implements Serializable {
                 ", rId=" + rId +
                 ", deleteStatus=" + deleteStatus +
                 ", role=" + role +
+                ", avatar='" + avatar + '\'' +
                 '}';
     }
 }

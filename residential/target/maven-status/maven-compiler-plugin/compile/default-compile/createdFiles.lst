@@ -1,0 +1,5 @@
+com\zero\hjy\controller\ResidenceController.class
+com\zero\hjy\entity\Residence.class
+com\zero\hjy\dao\ResidenceMappe.class
+com\zero\hjy\service\impl\ResidenceImpl.class
+com\zero\hjy\service\ResidenceService.class

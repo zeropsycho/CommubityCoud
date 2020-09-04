@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zero.hjy.dao.ModuleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zero.hjy.entity.Module">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="make" property="makeNo"/>
+    </resultMap>
+
+    <!--in查询数据量控制在200以内-->
+    <select id="moduleInMakeNo" resultMap="BaseResultMap">
+        select name,make FROM tab_module
+        WHERE make IN (
+        <foreach collection="array" item="number" separator=",">
+            #{number}
+        </foreach>
+        )
+    </select>
+
+</mapper>

@@ -7,7 +7,7 @@
         <id column="id" property="id" />
         <result column="u_username" property="username" />
         <result column="u_password" property="password" />
-        <result column="u_nickname" property="uNickname" />
+        <result column="name" property="name" />
         <result column="u_gender" property="uGender" />
         <result column="u_birthdate" property="uBirthdate" />
         <result column="u_remarks" property="uRemarks" />
@@ -23,32 +23,38 @@
         <result column="c_post_id" property="cPostId" />
         <result column="c_department_id" property="cDepartmentId" />
         <result column="r_id" property="rId" />
+        <result column="avatar" property="avatar"/>
         <result column="delete_status" property="deleteStatus" />
         <association property="role" javaType="com.zero.hjy.entity.Role">
             <result property="name" column="name"></result>
             <result property="status" column="status"></result>
+            <result property="mMake" column="m_make"/>
         </association>
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, u_username, u_password, u_nickname, u_gender, u_birthdate, u_remarks, u_email, u_mobile_phone,
+        id, u_username, u_password, name, u_gender, u_birthdate, u_remarks, u_email, u_mobile_phone,
         u_office_phone, u_faxa_phone, u_status, u_start_effect, u_end_effect, u_crate_time, u_update_time, c_post_id,
-        c_department_id, r_id, delete_status
+        c_department_id, r_id, delete_status, avatar
     </sql>
 
     <select id="userAndRole" resultMap="BaseResultMap">
+        <!--待优化-->
         select * from tab_user u
-        <trim suffixOverrides="where" prefixOverrides="or | and">
-            <if test="username != null and '' != username">
-                u.username = {username}
-            </if>
-            LEFT JOIN tab_user_role ur
-            on u.id = ur.u_id
-            LEFT JOIN tab_role r
-            on r.id = ur.r_id
-        </trim>
+        LEFT JOIN tab_user_role ur
+        on u.id = ur.u_id
+        LEFT JOIN tab_role r
+        on r.id = ur.r_id
+        where
+        u.u_username = #{username,javaType=java.lang.String}
     </select>
 
+    <select id="userLogin" resultMap="BaseResultMap">
+        select id, u_username,u_password,name,u_start_effect,u_end_effect, avatar
+        FROM tab_user
+        where u_username = #{username}
+        AND u_password = #{password}
+    </select>
 
 </mapper>

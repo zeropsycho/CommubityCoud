@@ -14,7 +14,7 @@ import java.util.List;
  * @author ZERO
  * @since 2020-09-03
  */
-public class Role implements Serializable {
+public class Role<T> implements Serializable {
 
     private static final long serialVersionUID=1L;
 
@@ -40,14 +40,26 @@ public class Role implements Serializable {
      * 更新时间
      */
     private Timestamp upTimestamp;
+    /**
+     * 模块权限
+     */
+    private String mMake;
 
-    private List<Object> permissions;
+    private List<T> permissions;
 
-    public List<Object> getPermissions() {
+    public String getmMake() {
+        return mMake;
+    }
+
+    public void setmMake(String mMake) {
+        this.mMake = mMake;
+    }
+
+    public List<T> getPermissions() {
         return permissions;
     }
 
-    public void setPermissions(List<Object> permissions) {
+    public void setPermissions(List<T> permissions) {
         this.permissions = permissions;
     }
 
@@ -99,6 +111,7 @@ public class Role implements Serializable {
                 ", status=" + status +
                 ", createTime=" + createTime +
                 ", upTimestamp=" + upTimestamp +
+                ", mMake='" + mMake + '\'' +
                 ", permissions=" + permissions +
                 '}';
     }
