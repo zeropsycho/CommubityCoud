@@ -25,7 +25,6 @@
 
     <dependencies>
         <!--项目依赖-->
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -97,39 +96,44 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <!-- 是否被过滤,如果被过滤则无法使用 -->
+                <filtering>false</filtering>
+            </resource>
+            <!--编译指定位置文件 可以指定编译-->
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+        </resources>
+
         <plugins>
-            <!--出现a project依赖b project时可能会导致编译异常，如果子模块不做配置，那么普通的jar包会先生成，后生成可执行jar，
+            <!--(boot inf)出现a project依赖b project时可能会导致编译异常，如果子模块不做配置，那么普通的jar包会先生成，后生成可执行jar，
              造成可执行jar包覆盖普通jar包，由此a工程无法依赖b工程的可执行jar包
              解决：子模块使用以下plugin-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration> <!--遗留问题：可能在springboot启动类注解配置了异常路径-->
+                <configuration>
                     <mainClass>com.zero.hjy.WebApplication</mainClass>
+                    <!--<classifier>exec</classifier>-->
                 </configuration>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/main</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-                <!--<filtering>false</filtering>-->
-            </resource>
-            <!--编译指定位置文件-->
-            <!--<resource>
-                <directory>src/main/resource</directory>
-                <includes>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                    <include>**/*.tld</include>
-                </includes>
-                <filtering>false</filtering>
-            </resource>-->
-        </resources>
     </build>
-<!--配置远程仓库-->
+
+    <!--指定Java版本-->
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <!--配置远程仓库-->
     <!--<pluginRepositories>
         <pluginRepository>
             <id>central</id>

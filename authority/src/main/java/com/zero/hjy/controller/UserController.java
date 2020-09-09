@@ -1,9 +1,8 @@
 package com.zero.hjy.controller;
 
 
+import com.zero.hjy.annotation.JwtIgnore;
 import com.zero.hjy.entity.User;
-import com.zero.hjy.pojo.Permission;
-import com.zero.hjy.service.ModuleService;
 import com.zero.hjy.service.UserService;
 import com.zero.hjy.service.impl.ModuleImpl;
 import com.zero.hjy.statuscode.StatusCode;
@@ -18,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.util.Arrays;
 
 /**
  *
@@ -37,21 +35,26 @@ public class UserController {
     private ModuleImpl moduleImpl;
 
     @RequestMapping("/auth/login")
+    @JwtIgnore
     public ReturnTemplate userLogin(User user, HttpServletResponse response) {
         User user1 = userService.userLogin(user);
-
+        // 参数值 null处理a
         String token = JwtUtils.createJWT(user1.getPassword(), user1.getId().toString(), user1.getUsername(), user1.getRole().toString(), audience);
         response.setHeader(JwtUtils.AUTH_HEADER_KEY, JwtUtils.TOKEN_PREFIX + token);
-        user1.setToken(token);
+        user1.setToken(JwtUtils.TOKEN_PREFIX + token);
 
         return new ReturnTemplate(user1, StatusCode.SUCCESS.code, StatusCode.SUCCESS.message);
     }
 
     @RequestMapping("/user/info")
     public ReturnTemplate userInfoAndRoles(HttpServletRequest request) {
-        String token = request.getHeader(JwtUtils.ACCESS_TOKEN);
-        String username = JwtUtils.getUsername(token, audience.getSecret());
-        String pw = JwtUtils.getPw(token, audience.getSecret());
+
+        String token = request.getHeader(JwtUtils.AUTH_HEADER_KEY);
+        // token null处理
+        String tokens = token.split(" ")[1].trim();
+
+        String username = JwtUtils.getUsername(tokens, audience.getSecret());
+        String pw = JwtUtils.getPw(tokens, audience.getSecret());
         User user = new User();
         user.setUsername(username);
         user.setPassword(pw);

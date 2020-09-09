@@ -4,6 +4,9 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
 /**
  * <p>
@@ -34,7 +37,6 @@ public class CompanyPost implements Serializable {
      */
     private String description;
 
-
     public Long getId() {
         return id;
     }
@@ -57,14 +59,5 @@ public class CompanyPost implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    @Override
-    public String toString() {
-        return "CompanyPost{" +
-        "id=" + id +
-        ", name=" + name +
-        ", description=" + description +
-        "}";
     }
 }

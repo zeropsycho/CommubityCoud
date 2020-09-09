@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zero.hjy.dao.UnitMapper">
+
+    <!-- 通用查询结果列 -->
+    <resultMap id="BaseResultMap" type="com.zero.hjy.entity.Unit">
+        <id column="id" property="id" />
+        <result column="unit_no" property="unitNo" />
+        <result column="unit_name" property="unitName" />
+        <result column="start_floor" property="startFloor" />
+        <result column="end_floor" property="endFloor" />
+        <result column="start_room_no" property="startRoomNo" />
+        <result column="end_room_no" property="endRoomNo" />
+        <result column="remarks" property="remarks" />
+        <result column="building_id" property="buildingId" />
+        <result column="building_no" property="buildingNo" />
+    </resultMap>
+    <!-- 通用查询映射结果 -->
+    <sql id="Base_Column_List">
+        id, unit_no, unit_name, start_floor, end_floor, start_room_no, end_room_no, remarks, building_id, building_no
+    </sql>
+
+    <insert id="newUnitInfo" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO tab_unit
+        <trim prefix="(" suffix=")" prefixOverrides="," suffixOverrides=",">
+            <if test="null != unitNo and '' != unitNo">unit_no,</if>
+            <if test="null != unitName and '' != unitName">unit_name,</if>
+            <if test="null != startFloor and '' != startFloor">start_floor,</if>
+            <if test="null != endFloor and '' != endFloor">end_floor,</if>
+            <if test="null != startRoomNo and '' != startRoomNo">start_room_no,</if>
+            <if test="null != endRoomNo and '' != endRoomNo">end_room_no,</if>
+            <if test="null != remarks and '' != remarks">remarks,</if>
+            <if test="null != buildingId and '' != buildingId">building_id,</if>
+            <if test="null != buildingNo and '' != buildingNo">building_no,</if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" prefixOverrides="," suffixOverrides=",">
+            <if test="null != unitNo and '' != unitNo">#{unitNo},</if>
+            <if test="null != unitName and '' != unitName">#{unitName},</if>
+            <if test="null != startFloor and '' != startFloor">#{startFloor},</if>
+            <if test="null != endFloor and '' != endFloor">#{endFloor},</if>
+            <if test="null != startRoomNo and '' != startRoomNo">#{startRoomNo},</if>
+            <if test="null != endRoomNo and '' != endRoomNo">#{endRoomNo},</if>
+            <if test="null != remarks and '' != remarks">#{remarks},</if>
+            <if test="null != buildingId and '' != buildingId">#{buildingId},</if>
+            <if test="null != buildingNo and '' != buildingNo">#{buildingNo},</if>
+        </trim>
+    </insert>
+
+    <insert id="batchNewUnitInfos" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO tab_unit
+        <trim prefixOverrides="," suffixOverrides="," prefix="(" suffix=")">
+            <if test="null != list[0].unitNo and '' != list[0].unitNo">unit_no,</if>
+            <if test="null != list[0].unitName and '' != list[0].unitName">unit_name,</if>
+            <if test="null != list[0].startFloor and '' != list[0].startFloor">start_floor,</if>
+            <if test="null != list[0].endFloor and '' != list[0].endFloor">end_floor,</if>
+            <if test="null != list[0].startRoomNo and '' != list[0].startRoomNo">start_room_no,</if>
+            <if test="null != list[0].endRoomNo and '' != list[0].endRoomNo">end_room_no,</if>
+            <if test="null != list[0].remarks and '' != list[0].remarks">remarks,</if>
+            <if test="null != list[0].buildingId and '' != list[0].buildingId">building_id,</if>
+            <if test="null != list[0].buildingNo and '' != list[0].buildingNo">building_no,</if>
+        </trim>
+        VALUES
+        <foreach collection="list" separator="," item="item">
+            <trim prefix="(" suffix=")" prefixOverrides="," suffixOverrides=",">
+                <if test="null != item.unitNo and '' != item.unitNo">#{item.unitNo},</if>
+                <if test="null != item.unitName and '' != item.unitName">#{item.unitName},</if>
+                <if test="null != item.startFloor and '' != item.startFloor">#{item.startFloor},</if>
+                <if test="null != item.endFloor and '' != item.endFloor">#{item.endFloor},</if>
+                <if test="null != item.startRoomNo and '' != item.startRoomNo">#{item.startRoomNo},</if>
+                <if test="null != item.endRoomNo and '' != item.endRoomNo">#{item.endRoomNo},</if>
+                <if test="null != item.remarks and '' != item.remarks">#{item.remarks},</if>
+                <if test="null != item.buildingId and '' != item.buildingId">#{item.buildingId},</if>
+                <if test="null != item.buildingNo and '' != item.buildingNo">#{item.buildingNo},</if>
+            </trim>
+        </foreach>
+    </insert>
+    <!--更新单元信息-->
+    <update id="updateUnitInfo">
+        UPDATE tab_unit
+        <set>
+            <trim suffixOverrides="," prefixOverrides=",">
+                <if test="null != unitNo and '' != unitNo">unit_no = #{unitNo},</if>
+                <if test="null != unitName and '' != unitName">unit_name = #{unitName},</if>
+                <if test="null != startFloor and '' != startFloor">start_floor = #{startFloor},</if>
+                <if test="null != endFloor and '' != endFloor">end_floor = #{endFloor},</if>
+                <if test="null != startRoomNo and '' != startRoomNo">start_room_no = #{startRoomNo},</if>
+                <if test="null != endRoomNo and '' != endRoomNo">end_room_no = #{endRoomNo},</if>
+                <if test="null != remarks and '' != remarks">remarks = #{remarks},</if>
+                <if test="null != buildingId and '' != buildingId">building_id = #{buildingId},</if>
+                <if test="null != buildingNo and '' != buildingNo">building_no = #{buildingNo},</if>
+            </trim>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <select id="unitNameInfosByBuildingNo" resultMap="BaseResultMap">
+        SELECT id,unit_no, unit_name, start_floor, end_floor, start_room_no, end_room_no, remarks, building_id, building_no
+        FROM tab_unit
+        WHERE building_no = #{buildingNo}
+    </select>
+</mapper>
+

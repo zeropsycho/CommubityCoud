@@ -4,12 +4,11 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
 /**
- * <p>
- * 
- * </p>
- *
  * @author ZERO
  * @since 2020-09-05
  */
@@ -44,7 +43,7 @@ public class Enterprise implements Serializable {
     /**
      * 企业类型
      */
-    private String enterpriseType;
+    private Integer enterpriseType;
 
     /**
      * 企业电话
@@ -101,7 +100,6 @@ public class Enterprise implements Serializable {
      */
     private String bankingAccount;
 
-
     public Long getId() {
         return id;
     }
@@ -142,11 +140,11 @@ public class Enterprise implements Serializable {
         this.enterpriseAbbreviation = enterpriseAbbreviation;
     }
 
-    public String getEnterpriseType() {
+    public Integer getEnterpriseType() {
         return enterpriseType;
     }
 
-    public void setEnterpriseType(String enterpriseType) {
+    public void setEnterpriseType(Integer enterpriseType) {
         this.enterpriseType = enterpriseType;
     }
 
@@ -236,28 +234,5 @@ public class Enterprise implements Serializable {
 
     public void setBankingAccount(String bankingAccount) {
         this.bankingAccount = bankingAccount;
-    }
-
-    @Override
-    public String toString() {
-        return "Enterprise{" +
-        "id=" + id +
-        ", enterpriseNo=" + enterpriseNo +
-        ", superior=" + superior +
-        ", enterpriseFullname=" + enterpriseFullname +
-        ", enterpriseAbbreviation=" + enterpriseAbbreviation +
-        ", enterpriseType=" + enterpriseType +
-        ", enterpriseTelephone=" + enterpriseTelephone +
-        ", enterpriseAddress=" + enterpriseAddress +
-        ", enterpriseNode=" + enterpriseNode +
-        ", centralTax=" + centralTax +
-        ", bankOfDeposit=" + bankOfDeposit +
-        ", enterpriseBrand=" + enterpriseBrand +
-        ", postalcode=" + postalcode +
-        ", faxNumber=" + faxNumber +
-        ", emailAddress=" + emailAddress +
-        ", localTax=" + localTax +
-        ", bankingAccount=" + bankingAccount +
-        "}";
     }
 }

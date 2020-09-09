@@ -67,7 +67,7 @@ public class ModuleImpl implements ModuleService {
         List<Permission> permissions = new ArrayList<>();
 
         moduleList.forEach(module -> {
-            permissions.add(new Permission(roleName, ModuleEnum.getName(module.getMakeNo()), module.getName()));
+            permissions.add(new Permission(roleName, module.getMakeNo().toString(), module.getName()));
         });
 
         if (null == permissions || permissions.isEmpty()) {

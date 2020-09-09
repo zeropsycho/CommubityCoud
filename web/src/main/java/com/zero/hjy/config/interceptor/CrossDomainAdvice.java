@@ -10,25 +10,25 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 public class CrossDomainAdvice implements WebMvcConfigurer {
 
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        // 跨域路径
+        registry.addMapping("/**")
+                // 是否跨域请求域名
+                .allowedOrigins("*")
+                // 是否允许证书
+                .allowCredentials(true)
+                // 跨域方法
+                .allowedMethods("*");
+        // 跨域允许时间 maxAge
+    }
+
     /**
      * 添加拦截器
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        //拦截路径可自行配置多个 可用 ，分隔开
+        //拦截路径配置多个可用 ，分隔开
         registry.addInterceptor(new JwtAdvice()).addPathPatterns("/**");
-    }
-
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        // 跨域路径
-        registry.addMapping("/**")
-        // 是否跨域请求域名
-        .allowedOrigins("*")
-        // 是否允许证书
-        .allowCredentials(true)
-        // 跨域方法
-        .allowedMethods("*");
-        // 跨域允许时间 maxAge
     }
 }

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zero.hjy.dao.BuildingMapper">
+
+    <resultMap id="BuildingResultMap" type="com.zero.hjy.entity.Building">
+        <id property="id" column="id"/>
+        <result column="building_no" property="buildingNo"/>
+        <result column="name" property="name"/>
+        <result column="capped_date" property="cappedDate"/>
+        <result column="unit_number" property="unitNumber"/>
+        <result column="completion_date" property="completionDate"/>
+        <result column="preSaleLicense" property="pre_sale_license"/>
+        <result column="building_permits" property="buildingPermits"/>
+        <result column="construction_area" property="constructionArea"/>
+        <result column="usage_area" property="usageArea"/>
+        <result column="remarks" property="remarks"/>
+        <result column="residence_no" property="residenceNo"/>
+    </resultMap>
+    
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, building_no, name, unit_number, capped_date, completion_date, pre_sale_license, building_permits, construction_area, usage_area, remarks,residence_no
+    </sql>
+
+    <insert id="newBuildingInfo">
+        INSERT INTO tab_building
+        <trim prefix="(" suffix=")" prefixOverrides="," suffixOverrides=",">
+            <if test="null != buildingNo and '' != buildingNo">building_no,</if>
+            <if test="null != name and '' != name">name,</if>
+            <if test="null != unitNumber and '' != unitNumber">unit_number,</if>
+            <if test="null != cappedDate and '' != cappedDate">capped_date,</if>
+            <if test="null != completionDate and '' != completionDate">completion_date,</if>
+            <if test="null != preSaleLicense and '' != preSaleLicense">pre_sale_license,</if>
+            <if test="null != buildingPermits and '' != buildingPermits">building_permits,</if>
+            <if test="null != constructionArea and '' != constructionArea">construction_area,</if>
+            <if test="null != usageArea and '' != usageArea">usage_area,</if>
+            <if test="null != remarks and '' != remarks">remarks,</if>
+            <if test="null != residenceNo and '' != residenceNo">residence_no,</if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" prefixOverrides="," suffixOverrides=",">
+            <if test="null != buildingNo and '' != buildingNo">#{buildingNo},</if>
+            <if test="null != name and '' != name">#{name}</if>
+            <if test="null != unitNumber and '' != unitNumber">#{unitNumber},</if>
+            <if test="null != cappedDate and '' != cappedDate">#{cappedDate},</if>
+            <if test="null != completionDate and '' != completionDate">#{completionDate},</if>
+            <if test="null != preSaleLicense and '' != preSaleLicense">#{preSaleLicense},</if>
+            <if test="null != buildingPermits and '' != buildingPermits">#{buildingPermits},</if>
+            <if test="null != constructionArea and '' != constructionArea">#{constructionArea},</if>
+            <if test="null != usageArea and '' != usageArea">#{usageArea},</if>
+            <if test="null != remarks and '' != remarks">#{remarks},</if>
+            <if test="null != residenceNo and '' != residenceNo">#{residenceNo},</if>
+        </trim>
+    </insert>
+    <!--动态批量插入 ？？？：当每条数据字段不一致时，无法准确录入数据-->
+    <insert id="batchNewBuildingInfo" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO tab_building
+        <!--<foreach collection="buildings" item="item" separator="," index="index">-->
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+                <if test="null != buildings[0].buildingNo and '' != buildings[0].buildingNo">building_no,</if>
+                <if test="null != buildings[0].name and '' != buildings[0].name">name,</if>
+                <if test="null != buildings[0].unitNumber and '' != buildings[0].unitNumber">unit_number,</if>
+                <if test="null != buildings[0].cappedDate and '' != buildings[0].cappedDate">capped_date,</if>
+                <if test="null != buildings[0].completionDate and '' != buildings[0].completionDate">completion_date,</if>
+                <if test="null != buildings[0].preSaleLicense and '' != buildings[0].preSaleLicense">pre_sale_license,</if>
+                <if test="null != buildings[0].buildingPermits and '' != buildings[0].buildingPermits">building_permits,</if>
+                <if test="null != buildings[0].constructionArea and '' != buildings[0].constructionArea">construction_area,</if>
+                <if test="null != buildings[0].usageArea and '' != buildings[0].usageArea">usage_area,</if>
+                <if test="null != buildings[0].remarks and '' != buildings[0].remarks">remarks,</if>
+                <if test="null != buildings[0].residenceNo and '' != buildings[0].residenceNo">residence_no,</if>
+            </trim>
+        <!--</foreach>-->
+        VALUES
+        <foreach collection="buildings" item="item" separator="," index="1">
+            <trim prefix="(" suffix=")" suffixOverrides=",">
+                <!--#{item.buildingNo},#{item.name}-->
+                <if test="null != item.buildingNo and '' != item.buildingNo">#{item.buildingNo},</if>
+                <if test="null != item.name and '' != item.name">#{item.name},</if>
+                <if test="null != item.unitNumber and '' != item.unitNumber">#{item.unitNumber},</if>
+                <if test="null != item.cappedDate and '' != item.cappedDate">#{item.cappedDate},</if>
+                <if test="null != item.completionDate and '' != item.completionDate">#{item.completionDate},</if>
+                <if test="null != item.preSaleLicense and '' != item.preSaleLicense">#{item.preSaleLicense},</if>
+                <if test="null != item.buildingPermits and '' != item.buildingPermits">#{item.buildingPermits},</if>
+                <if test="null != item.constructionArea and '' != item.constructionArea">#{item.constructionArea},</if>
+                <if test="null != item.usageArea and '' != item.usageArea">#{item.usageArea},</if>
+                <if test="null != item.remarks and '' != item.remarks">#{item.remarks},</if>
+                <if test="null != item.residenceNo and '' != item.residenceNo">#{item.residenceNo},</if>
+            </trim>
+        </foreach>
+    </insert>
+    <!--更新楼宇信息-->
+    <update id="updateBuildingInfo">
+        UPDATE tab_building
+        <set>
+            <trim prefixOverrides="," suffixOverrides=",">
+                <if test="null != buildingNo and '' != buildingNo">building_no=#{buildingNo},</if>
+                <if test="null != name and '' != name">name=#{name},</if>
+                <if test="null != unitNumber and '' != unitNumber">unit_number=#{unitNumber},</if>
+                <if test="null != cappedDate and '' != cappedDate">capped_date=#{cappedDate},</if>
+                <if test="null != completionDate and '' != completionDate">completion_date=#{completionDate},</if>
+                <if test="null != preSaleLicense and '' != preSaleLicense">pre_sale_license=#{preSaleLicense},</if>
+                <if test="null != buildingPermits and '' != buildingPermits">building_permits=#{buildingPermits},</if>
+                <if test="null != constructionArea and '' != constructionArea">construction_area=#{constructionArea},</if>
+                <if test="null != usageArea and '' != usageArea">usage_area=#{usageArea},</if>
+                <if test="null != remarks and '' != remarks">remarks=#{remarks},</if>
+            </trim>
+            where id = #{id}
+        </set>
+    </update>
+    <!--查询某个住宅楼宇名称-->
+    <select id="buildingInfosByResidenceNo" resultMap="BuildingResultMap">
+        SELECT id,building_no, name, unit_number, capped_date, completion_date, pre_sale_license, building_permits, construction_area, usage_area, remarks,residence_no
+        FROM tab_building
+        WHERE residence_no = #{residenceNo}
+    </select>
+</mapper>

@@ -38,7 +38,7 @@ public class JwtAdvice extends HandlerInterceptorAdapter {
             }
         }
 
-        if (HttpMethod.OPTIONS.equals(request.getMethod())) {
+        if (HttpMethod.OPTIONS.name().equals(request.getMethod())) {
             response.setStatus(HttpServletResponse.SC_OK);
             return true;
         }

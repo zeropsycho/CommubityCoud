@@ -1,7 +1,8 @@
 package com.zero.hjy.dao;
 
 import com.zero.hjy.entity.Enterprise;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+import java.util.List;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author ZERO
  * @since 2020-09-05
  */
-public interface EnterpriseMappe extends BaseMapper<Enterprise> {
+public interface EnterpriseMappe {
 
+    List<Enterprise> companyNameList(int type);
 }

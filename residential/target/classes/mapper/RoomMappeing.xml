@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zero.hjy.dao.RoomMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zero.hjy.entity.Room">
+        <id column="id" property="id" />
+        <result column="floor_number" property="floorNumber" />
+        <result column="room_name" property="roomName" />
+        <result column="unit_no" property="unitNo" />
+        <result column="construction_area" property="constructionArea" />
+        <result column="usage_area" property="usageArea" />
+        <result column="remarks" property="remarks" />
+        <result column="room_no" property="roomNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, floor_number, room_name, unit_no, construction_area, usage_area, remarks
+    </sql>
+
+    <insert id="batchNewRoomInfos">
+        INSERT INTO tab_room
+        <trim prefix="(" suffix=")" prefixOverrides="," suffixOverrides=",">
+            <if test="null != list[0].roomNo and '' != list[0].roomNo">room_no,</if>
+            <if test="null != list[0].floorNumber and '' != list[0].floorNumber">floor_number,</if>
+            <if test="null != list[0].roomName and '' != list[0].roomName">room_name,</if>
+            <if test="null != list[0].unitNo and '' != list[0].unitNo">unit_no,</if>
+            <if test="null != list[0].constructionArea and '' != list[0].constructionArea">construction_area,</if>
+            <if test="null != list[0].usageArea and '' != list[0].usageArea">usage_area,</if>
+            <if test="null != list[0].remarks and '' != list[0].remarks">remarks,</if>
+        </trim>
+        VALUES
+        <foreach collection="list" separator="," item="item" index="index">
+            <trim prefix="(" suffix=")" prefixOverrides="," suffixOverrides=",">
+                <if test="null != item.roomNo and '' != item.roomNo">#{item.roomNo},</if>
+                <if test="null != item.floorNumber and '' != item.floorNumber">#{item.floorNumber},</if>
+                <if test="null != item.roomName and '' != item.roomName">#{item.roomName},</if>
+                <if test="null != item.unitNo and '' != item.unitNo">#{item.unitNo},</if>
+                <if test="null != item.constructionArea and '' != item.constructionArea">#{item.constructionArea},</if>
+                <if test="null != item.usageArea and '' != item.usageArea">#{item.usageArea},</if>
+                <if test="null != item.remarks and '' != item.remarks">#{item.remarks},</if>
+            </trim>
+        </foreach>
+    </insert>
+
+    <select id="roomNameInfoByUnitNo" resultMap="BaseResultMap">
+        SELECT id,floor_number, room_name, room_no, unit_no, construction_area, usage_area, remarks
+        FROM tab_room
+        WHERE unit_no = #{unitNo}
+        <if test="null != constructionArea and '' != constructionArea">AND construction_area = #{constructionArea}</if>
+        <if test="null != usageArea and '' != usageArea">AND usage_area = #{usageArea}</if>
+    </select>
+    
+    <update id="updateRoomInfo">
+        UPDATE tab_room
+        <set>
+            <trim suffixOverrides="," prefixOverrides=",">
+                <if test="null != roomNo and '' != roomNo">room_no = #{roomNo},</if>
+                <if test="null != floorNumber and '' != floorNumber">floor_number = #{floorNumber},</if>
+                <if test="null != roomName and '' != roomName">room_name = #{roomName},</if>
+                <if test="null != unitNo and '' != unitNo">unit_no = #{unitNo},</if>
+                <if test="null != constructionArea and '' != constructionArea">construction_area = #{constructionArea},</if>
+                <if test="null != usageArea and '' != usageArea">usage_area = #{usageArea},</if>
+                <if test="null != remarks and '' != remarks">remarks = #{remarks},</if>
+            </trim>
+        </set>
+        WHERE id = #{id}
+    </update>
+</mapper>

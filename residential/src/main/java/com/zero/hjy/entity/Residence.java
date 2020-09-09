@@ -70,6 +70,19 @@ public class Residence implements Serializable {
      */
     private Long developerId;
 
+    /**
+     * 公司no
+     * @return
+     */
+    private String corporationNo;
+
+    public String getCorporationNo() {
+        return corporationNo;
+    }
+
+    public void setCorporationNo(String corporationNo) {
+        this.corporationNo = corporationNo;
+    }
 
     public Long getId() {
         return id;
@@ -157,22 +170,5 @@ public class Residence implements Serializable {
 
     public void setDeveloperId(Long developerId) {
         this.developerId = developerId;
-    }
-
-    @Override
-    public String toString() {
-        return "Residence{" +
-        "id=" + id +
-        ", residenceNo=" + residenceNo +
-        ", residenceName=" + residenceName +
-        ", floorArea=" + floorArea +
-        ", floorage=" + floorage +
-        ", greeneryArea=" + greeneryArea +
-        ", roadArea=" + roadArea +
-        ", buildingNumber=" + buildingNumber +
-        ", director=" + director +
-        ", residenceAddress=" + residenceAddress +
-        ", developerId=" + developerId +
-        "}";
     }
 }

@@ -4,12 +4,14 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
 /**
  * <p>
  * 公司部门结构，以及部门的联系方式，跟集团公司相关联
  * </p>
- *
  * @author ZERO
  * @since 2020-09-05
  */
@@ -35,9 +37,9 @@ public class CompanyDepartment implements Serializable {
     private String type;
 
     /**
-     * 上级部门
+     * 上级部门/公司
      */
-    private Integer superior;
+    private String superior;
 
     /**
      * 部门负责人
@@ -53,7 +55,6 @@ public class CompanyDepartment implements Serializable {
      * 部门传真
      */
     private String departmentFax;
-
 
     public Long getId() {
         return id;
@@ -79,11 +80,11 @@ public class CompanyDepartment implements Serializable {
         this.type = type;
     }
 
-    public Integer getSuperior() {
+    public String getSuperior() {
         return superior;
     }
 
-    public void setSuperior(Integer superior) {
+    public void setSuperior(String superior) {
         this.superior = superior;
     }
 
@@ -109,18 +110,5 @@ public class CompanyDepartment implements Serializable {
 
     public void setDepartmentFax(String departmentFax) {
         this.departmentFax = departmentFax;
-    }
-
-    @Override
-    public String toString() {
-        return "CompanyDepartment{" +
-        "id=" + id +
-        ", name=" + name +
-        ", type=" + type +
-        ", superior=" + superior +
-        ", responsiblePerson=" + responsiblePerson +
-        ", departmentPhone=" + departmentPhone +
-        ", departmentFax=" + departmentFax +
-        "}";
     }
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zero.hjy.dao.DeveloperMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, developer_name, legal_representative, contact, contact_telephone, contact_adress, remarks
+    </sql>
+
+    <insert id="newDeveloper" useGeneratedKeys ="true" keyProperty="id">
+        INSERT INTO tab_developer
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="null != developerName and '' != developerName">developer_name,</if>
+            <if test="null != legalRepresentative and '' != legalRepresentative">legal_representative,</if>
+            <if test="null != contact and '' != contact">contact,</if>
+            <if test="null != contactTelephone and '' != contactTelephone">contact_telephone,</if>
+            <if test="null != contactAdress and '' != contactAdress">contact_adress,</if>
+            <if test="null != remarks and '' != remarks">remarks,</if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="null != developerName and '' != developerName">#{developerName},</if>
+            <if test="null != legalRepresentative and '' != legalRepresentative">#{legalRepresentative},</if>
+            <if test="null != contact and '' != contact">#{contact},</if>
+            <if test="null != contactTelephone and '' != contactTelephone">#{contactTelephone},</if>
+            <if test="null != contactAdress and '' != contactAdress">#{contactAdress},</if>
+            <if test="null != remarks and '' != remarks">#{remarks},</if>
+        </trim>
+    </insert>
+</mapper>

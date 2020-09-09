@@ -1,4 +1,6 @@
 com\zero\hjy\statuscode\StatusCode.class
 com\zero\hjy\template\ReturnTemplate.class
 com\zero\hjy\key\Md5.class
+com\zero\hjy\annotation\JwtIgnore.class
+com\zero\hjy\config\PrimaryDataBaseConfig.class
 com\zero\hjy\key\Base64Util.class
